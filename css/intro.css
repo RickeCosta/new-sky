@@ -1,0 +1,280 @@
+/* Background estilo */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p,li,ul{
+  margin: 0;
+  padding: 0;
+}
+a{ 
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+}
+a:visited{ 
+  color: #fff;
+}
+
+#introducao{
+  height: 100vh;
+  background-image: url('/img/background.jpg');
+  background-repeat: no-repeat;
+  background-position:  center top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Barra de navegação e estilos */
+
+
+
+.nav-container{
+  display: flex;
+  background: #000A62;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.15);
+  max-height: 70px;
+  max-width: 100vw;
+  margin-top: 0px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 20px 0 20px;
+}
+
+
+.img-logo-2 img{ 
+  width: 800px;
+  height: 225px;
+  position: relative;
+  top: -80px;
+  max-width: 100%;
+}
+
+.card-logo{ 
+  display: flex;
+  gap: 23px;
+}
+.card-logo img{
+  width: 162px;
+}
+
+.intro-title { 
+  display: flex;
+  color: #FFF;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  align-items: center;
+  max-width: 100%;
+}
+
+
+
+h2::before{ 
+  content: " ";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #DEFE52;
+  border-radius: 50%;
+  justify-content: center;
+  margin-right: 7px;
+}
+
+.menu { 
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  max-width: 100%;
+}
+.numeros{
+  display: flex;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  color: #00B0FF;
+  background: transparent;
+  border: none;
+  border: 1px solid #eee;
+  width: 92px;
+  height: 36px;
+  border-radius: 20px;
+  justify-content: center; 
+  align-items: center;
+  max-width: 100%;
+}
+
+.card-avancar{ 
+  gap: 11px;
+}
+.card-avancar, .seta-direita-avancar{
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  
+}
+
+.seta-esquerda 
+ img{
+  width: 9.98px;
+  
+}
+
+.seta-direita img{ 
+  width: 9.98px;
+}
+.seta-esquerda a{ 
+  display: flex;
+  background:  #00B0FF;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+}
+
+.seta-direita-avancar { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  height: 36px;
+  background-color: #00B0FF;
+  border-radius: 20px;  
+  gap: 11px;
+}
+.seta-direita { 
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Contéudo principal */ 
+.conteudo{ 
+  text-align: center;
+  
+}
+.card-text { 
+  color: #000A62;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+
+  margin-top: 80px;
+}
+.card-text span {
+  font-weight: 700;
+}
+
+.video{
+display: flex;
+padding: 20px;
+padding-bottom: 45%;
+position: relative;
+}
+
+.video > iframe { 
+  position: absolute;
+  top: 4%;
+  left: 15%;
+  width: 70%;
+  height: 80%;
+}
+
+button{ 
+  display: none;
+}
+
+ 
+
+@media( max-width: 768px){
+
+  button{ 
+    display: block;
+  }
+  .menu-hamburguer{ 
+    border: none;
+    background: none;
+    border-top: 3px solid #00B0FF;
+    cursor: pointer;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-hamburguer2{ 
+    border: 1.4px solid #eee;
+    background-color: transparent;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  .menu-hamburguer::before,
+  .menu-hamburguer::after{
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-top: 2.2px;
+    background:#00B0FF;
+  }
+
+  .img-logo-2 img{ 
+    display: none;
+  }
+  .nav-container{
+    height: 200px;
+    
+  }
+
+  .card-logo img{ 
+    width: 100px;
+  }
+  .card-text { 
+    font-size: 16px;
+  }
+
+
+  .card-avancar{ 
+    display: none;
+  }
+  .card-avancar.active { 
+    display: grid;
+    grid-template-columns: 40px 20px;
+    position: absolute;
+    top: 70px;
+    left: 226px;
+    transition: 1s ease-out;
+    border-top-color:transparent ;
+  }
+
+  @media (max-width:480px){
+    .card-logo img{
+      width: 80px;
+    }
+    .intro-title{ 
+      font-size: 12px;
+    }
+
+    .card-avancar.active { 
+      display: grid;
+      grid-template-columns: 40px 20px;
+      position: absolute;
+      top: 90px;
+      left: 106px;
+      transition: 1s ease-out;
+    }
+  }
+ 
+}

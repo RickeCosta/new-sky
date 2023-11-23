@@ -1,0 +1,228 @@
+/* Reset simples */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p,li,ul{
+  margin: 0;
+  padding: 0;
+}
+ul,a,p{
+  
+  list-style: none;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+
+
+
+#intro{ 
+  height: 100%;
+  background-image: url(/img/espaco.png);
+  background-repeat: no-repeat;
+  background-position:  center top;
+  background-size: cover;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+
+/* Header  */
+
+#intro header { 
+  display: flex;
+ align-items: end;
+  flex-direction: column;
+ padding-right: 48px;
+}
+
+
+
+
+#intro header img{
+  display: flex;
+  max-width: 602px;
+}
+
+
+
+#container{ 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-left: 146px;
+}
+
+.title h1{ 
+  color:  #F5F5F5;
+  font-size: 60px;
+  line-height: 75.03px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  
+}
+
+
+#listas-titulos{
+  display: flex;
+  flex-wrap: wrap;  
+  max-width: 100vw;
+  font-family: 'Trispace', sans-serif;
+  color: #F5F5F5;
+  font-size: 24px;
+  margin-top: 150px;
+  gap: 11px;
+}
+
+#listas-titulos img { 
+  display: flex;
+  object-fit: contain;
+  width: 25vh;
+}
+
+a{
+  text-decoration: none;
+  color: #F5F5F5;
+}
+
+a:visited{
+  color: #F5F5F5;
+}
+a:hover{ 
+  color: #DEFE52;
+}
+
+
+li:hover{ 
+color: #DEFE52;
+  
+}
+
+#listas-titulos p{
+  max-width: 12ch;
+ height: 4ch;
+ text-align: center;
+ margin-left: auto;
+ margin-right: auto;
+ margin-top: 20px;
+
+}
+
+
+
+@media (max-width:1441px){
+  #listas-titulos img { 
+    display: flex;
+    width: 220px;
+  }
+
+  #intro header img{
+    display: flex;
+    width: 350px;
+  }
+
+  #intro p{
+    max-width: 12ch;
+    height: 4ch;
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+    font-size: 16px;
+  }
+
+  @media (max-width:769px){
+    #intro header img{
+      display: flex;
+      width: 150px;
+    }
+
+    .title h1{ 
+     
+      font-size: 40px;
+    }
+    #listas-titulos img { 
+      display: flex;
+      object-fit: contain;
+      width: 180px;
+    }
+  }
+
+  @media (max-width:767px){
+    #container{ 
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin-left: 0px;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    
+#listas-titulos{
+  display: flex;
+  flex-wrap: nowrap;  
+  flex-direction: column;
+  max-width: 100vw;
+  font-family: 'Trispace', sans-serif;
+  color: #F5F5F5;
+  font-size: 24px;
+  gap: 11px;
+  margin-top: 0;
+  margin-top: 100px;
+}
+
+.title h1{ 
+  color:  #F5F5F5;
+  font-size: 40px;
+  line-height: 45.03px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+ 
+}
+
+
+#listas-titulos img { 
+  display: flex;
+  object-fit: contain;
+  
+}
+
+#intro header { 
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+ padding-right: 0px;
+}
+
+
+
+
+#intro header img{
+  display: flex;
+  max-width: 100%;
+}
+
+
+
+#container{ 
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+
+  }
+}
+
+
